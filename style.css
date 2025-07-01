@@ -1,0 +1,42 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #111;
+    font-family: Arial,sans-serif;
+}
+
+#timer_display {
+    font-size: 100px;
+    color: #0ff;
+    text-shadow: 0 0 8px #0ff,0 0 20px #0ff, 0 0 30px #00ffff, 0 0 40px #00ffff;  
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.controls {
+display: flex;
+justify-content: center;
+gap: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    color: #0ff;
+    background-color: #222;
+    cursor: pointer;
+    transition: 0.3s;
+    text-shadow: 0 0 8px #0ff;
+}
+
+button:hover {
+    box-shadow: 0 0 10px #0ff, 0 0 20px #0ff, 0 0 30px #00ffff;
+}
+
+button:active {
+    background-color: #333;
+}
