@@ -49,3 +49,16 @@ const resetTimer = () => {
 startButton.addEventListener('click',startTimer)
 pauseButton.addEventListener('click',pauseTimer)
 resetButton.addEventListener('click',resetTimer)
+
+// Обработчик нажатия на пробел
+document.addEventListener('keydown', (event) => {
+    // Проверяем, был ли нажат пробел (код клавиши 32)
+    if (event.code === 'Space') {
+        // Если таймер не работает, запускаем его, если работает — ставим на паузу
+        if (isRunning) {
+            pauseTimer();
+        } else {
+            startTimer();
+        }
+    }
+})
